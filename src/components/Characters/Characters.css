@@ -1,0 +1,86 @@
+body {
+    background-color: #282c34;
+}
+
+.container {
+    margin-top: 1rem;
+}
+
+.characters-ext {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.character-item {  
+    width: 16%;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 100%;
+    box-shadow: 10px 5px 5px rgb(29, 29, 29);
+}
+
+.character-name {
+    position: absolute;
+    font-size: 1.3rem;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    color: #61dafb;
+    background-color: #20232a;
+    opacity: 0.7;
+}
+
+
+.character-item:hover .character-name {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+.pagination-ext {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 70px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.1);
+}
+.pagination-number {
+    color: #fff;
+    font-size: 1.5rem;
+}
+button.pagination-button {
+    height: 44px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #e9ecef;
+    transition: all 0.2s;
+    border-radius: 10px;
+    border: 0;
+    font-weight: bold;
+}
+
+button.pagination-button:hover {
+    background-color: #61dafb;
+    transition: all 0.2s;
+}
+
+
+
+
+
+
+

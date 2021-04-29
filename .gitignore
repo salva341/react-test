@@ -1,0 +1,24 @@
+### General ###
+dist/
+i18n/
+generated.*
+junit_results.xml
+node_modules/
+npm-debug.log*
+tmp/
+test/
+
+### Eclipse ###
+.metadata
+bin/
+.idea/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.DS_Store

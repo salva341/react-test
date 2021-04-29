@@ -1,0 +1,8 @@
+.bg-react {
+    background-color: #20232a;
+}
+
+a.nav-link.is-active {
+    color: #61dafb !important;
+    box-shadow: 0px 2px;
+}
