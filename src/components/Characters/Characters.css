@@ -85,9 +85,6 @@ button.pagination-button:hover {
     transition: all 0.2s;
 }
 
-
-
-
-
-
-
+button.pagination-button:disabled {
+    background-color: rgb(29 29 29 / 10%);
+}

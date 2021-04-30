@@ -1,10 +1,10 @@
-import {cleanup, render, screen} from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import Characters from "./Characters";
 
 afterEach(cleanup);
 
 test('should render all pagination elements', () => {
-    render(<Characters/>)
+    render(<Characters />)
     const backButton = screen.getByTestId("back-button");
     const nextButton = screen.getByTestId("next-button");
     const pageNumber = screen.getByTestId("page-number");
@@ -15,14 +15,22 @@ test('should render all pagination elements', () => {
 });
 
 test('should render the characters container', () => {
-    render(<Characters/>)
+    render(<Characters />)
     const charactersContainer = screen.getByTestId("characters-container");
-
     expect(charactersContainer).toBeInTheDocument();
 });
 
-test("should call to characters API and return the correct response", () => {
+test('should navigate to page 2', () => {
 
+
+});
+
+test('should navigate to page 1', () => {
+
+});
+
+test("should call to characters API and return the correct response", () => {
+    render(<Characters />);
 });
 
 
