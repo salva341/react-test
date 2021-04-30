@@ -26,14 +26,14 @@ function Characters() {
     return (
         <div className="container">
             <div className="pagination-ext">
-                <button className="pagination-button">BACK</button>
-                <div className="pagination-number">
-                    <span>Page 3</span>
+                <button className="pagination-button" data-testid="back-button">BACK</button>
+                <div className="pagination-number" data-testid="page-number">
+                    <span>Page 1</span>
                 </div>
-                <button className="pagination-button">NEXT</button>
+                <button className="pagination-button" data-testid="next-button">NEXT</button>
             </div>
 
-            <div className="characters-ext">
+            <div className="characters-ext" data-testid="characters-container">
                 {characters.map((character) =>
                     <div key={character.id} className="character-item" onClick={() => viewDetails(character)}>
                         <div className="character-avatar">

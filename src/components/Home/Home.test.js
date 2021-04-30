@@ -3,13 +3,13 @@ import Home from "./Home";
 
 afterEach(cleanup);
 
-test('renders visit my profile text', () => {
+test('should render the visit my profile text', () => {
     render(<Home/>);
     const visitProfileText = screen.getByText(/Visit my profile at/i);
     expect(visitProfileText).toBeInTheDocument();
 });
 
-test('renders all the profile icons', () => {
+test('should render all the profile icons', () => {
     render(<Home/>);
     const linkedinIcon = screen.getByTestId("linkedin");
     const githubIcon = screen.getByTestId("github");
@@ -20,14 +20,14 @@ test('renders all the profile icons', () => {
     expect(codepenIcon).toBeInTheDocument();
 });
 
-test('linkedin link should contain the correct linkedin url profile', () => {
+test('linkedin icon link should contain the correct linkedin url profile', () => {
     render(<Home/>);
     const validUrl = 'https://www.linkedin.com/in/salva-romero-aguilar';
     const linkedinRef = screen.getByTestId("linkedin-ref");
     expect(linkedinRef).toHaveAttribute('href', validUrl);
 });
 
-test('github link should contain the correct github url profile', () => {
+test('github icon link should contain the correct github url profile', () => {
     render(<Home/>);
     const validUrl = 'https://github.com/salva341';
     const githubRef = screen.getByTestId("github-ref");
@@ -35,7 +35,7 @@ test('github link should contain the correct github url profile', () => {
 });
 
 
-test(' codepen link should contain the correct codepen url profile', () => {
+test(' codepen icon link should contain the correct codepen url profile', () => {
     render(<Home/>);
     const validUrl = 'https://codepen.io/salva341/';
     const codepenRef = screen.getByTestId("codepen-ref");
