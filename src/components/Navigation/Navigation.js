@@ -20,12 +20,12 @@ function Navigation() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link to="/" className={`nav-link  ${isActive == 'HOME' ? 'is-active' : ''}`}
+                                <Link to="/" className={`nav-link  ${isActive === 'HOME' ? 'is-active' : ''}`}
                                       onClick={() => setActive('HOME')}>HOME</Link>
                             </li>
                             <li className="nav-item">
                                 <Link to="/characters"
-                                      className={`nav-link ${isActive == 'CHARACTER' ? 'is-active' : ''}`}
+                                      className={`nav-link ${isActive === 'CHARACTER' ? 'is-active' : ''}`}
                                       onClick={() => setActive('CHARACTER')}>CHARACTER</Link>
                             </li>
                         </ul>
